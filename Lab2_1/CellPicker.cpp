@@ -3,7 +3,7 @@
 
 BoardCellPicker::BoardCellPicker(int board_size) : N(board_size) {
     if (N <= 0) {
-        throw InputError("Розмір дошки N має бути додатним.");
+        throw InputError("Board size N must be  N > 0.");
     }
 
     std::random_device rd;
